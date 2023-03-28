@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-+JzvzJzJQvzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJzJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      :root{
+   --main_color: rgb(93 141 211 )
+}
+
+body{
+    background-image: linear-gradient(to bottom,     #87CEFA 0%, #BFEFFF 50%, #fff 50%, #fff  100%);
+}
+.home{
+    height: 100vh;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+div{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+}
+
+ header p{
+    width: 75%;
+}
+ header h2{
+    font-size: 500%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.grid1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid2{
+    padding-top: 100px;
+    background:url(blue.png);
+}
+
+
+
+
+
+/* .flash-card */
+  
+.flash-cards {
+    background-color: #5d8dd3;
+    opacity: 1;
+    background-image:  linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #5d8dd3 1px);
+    background-size: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    }
+      
+.flash-card {
+        display: flex;
+        gap: 1rem;
+        background-color: var(--main_color);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
+        overflow: hidden;
+        height: 50vh; /* Make the  flash card take up 50% of the height of the page */
+        margin: 5rem;
+    }
+    .flash-card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+      
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 1rem 0 0 1rem;
+        max-height: 300px;
+      }
+    .text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      
+      p {
+        margin: 10px;
+        text-align: center;
+      }
+
+    .flash-card:first-child{
+        margin-top: 10rem;
+    }
+
+h1 {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+/* forms */
+
+.container {
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 800px;
+  position: relative;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #5d8dd3;
+  box-shadow: inset 6px 6px 6px #5d8dd3, inset -6px -6px 6px white ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.brand-logo {
+  height: 24px;
+  width: 100px;
+  background: url(logo.png);
+  background-color: #cbced1;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #494343;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-title {
+  margin-top:0px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #283e56;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label,
+input,
+button,
+textarea {
+  display: block;
+  width: 700px;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: gray;
+}
+
+input,
+textarea {
+  background: #ecf0f3;
+  padding: 20px;
+  padding-left: 30px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+   box-shadow:inset 6px 6px 6px #cbced1, inset -6px -6px 6px white ; 
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #283e56;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #87CEFA;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="home">
+    <aside class="grid1">
+        
+    <header>
+    <img src="logo.png" alt="" height="30px">
+    <h2>Discover the Power of AI</h2>
+    </header>
+    </aside>
+    <aside class="grid2">
+       <img src="welcome.jpg" alt="">
+    </aside>
+    </div>
+
+    <div class="flash-cards">
+        <div class="flash-card">
+          <img src="kermer.jpg" alt="Image 1" height="" width="400">
+          <div class="text">
+            <p>Stop wasting time searching for AI tools. Let us help you discover the latest AI news and web tools to make your life easier.</p>
+          </div>
+        </div>
+        <div class="flash-card">
+          <img src="camera.jpg" alt="Image 2" height="200" width="400">
+          <div class="text">
+            <p>Whether you're a graphic designer, photographer, or just interested in the creative potential of AI, WE can provide you better image generation tools that  can help you explore new ideas and possibilities</p>
+          </div>
+        </div>
+        <div class="flash-card">
+          <img src="unspalsh.jpg" alt="Image 3" height="200" width="400">
+          <div class="text">
+            <p> we also provide detailed information about different AI tools and software, including their features, benefits, and use cases.</p>
+          </div>
+        </div>
+        <div class="flash-card">
+          <img src="doodle type ko.jpg" alt="Image 4" height="200" width="400">
+          <div class="text">
+            <p> video editing AI software that uses advanced computer vision and deep learning techniques to enhance your videos and streamline your editing process.</p>
+          </div>
+        </div>
+        <div class="flash-card">
+          <img src="words.jpg" alt="Image 5" height="200" width="400">
+          <div class="text">
+            <p>Generate unique, well-written articles, product descriptions, and other types of content in a fraction of the time it would take to write them manually.</p>
+          </div>
+    </div>
+
+
+    <div class="container">
+      <div class="brand-logo">
+        <img src="logo 2.png" alt="">
+      </div>
+      <h1 class="brand-title">Contact Us</h1>
+
+      <form action="https://formsubmit.co/rijankanxo111@gmail.com" method="POST">
+
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://rijankanxo.github.io/form/upgrade">
+        <div class="inputs">
+          <label for="name"> Full Name:</label>
+          <input type="text" id="name" name="full&nbsp;name" placeholder="Enter your name" required>
+        </div>
+        <div class="inputs">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="inputs">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </body>
+</html>
